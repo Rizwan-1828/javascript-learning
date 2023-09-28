@@ -1,9 +1,9 @@
 const firstName = "Rizwan"
 const repoCount = 50
 
-// console.log(name + repoCount + " Value");
+// console.log(name + repoCount + " Value"); // this not a good way to write/concatenate
 
-console.log(`Hello this is ${firstName} and my repoCount is ${repoCount}`);
+console.log(`Hello this is ${firstName} and my repoCount is ${repoCount}`); // use this way/method to concatenate statements using tilde(`) sign
 
 const name = "Adam" 
 // These are the 2 ways to declare the string
