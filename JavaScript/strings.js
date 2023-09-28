@@ -1,3 +1,10 @@
+const firstName = "Rizwan"
+const repoCount = 50
+
+// console.log(name + repoCount + " Value");
+
+console.log(`Hello this is ${firstName} and my repoCount is ${repoCount}`);
+
 const name = "Adam" 
 // These are the 2 ways to declare the string
 const newName = new String("Rizwan")
