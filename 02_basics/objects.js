@@ -22,15 +22,30 @@ const myObj = {
 // console.log("Accessing object properties using dot '.'");
 // console.log(myObj.name);
 // console.log(myObj.age); 
-console.log(myObj.location);
+// console.log(myObj.location);
 
 // 2nd way of accessing object properties
 // console.log("Accessing object properties using as a string inside square brackets '[]'");
 
 // console.log(myObj["email"]);
 // console.log(myObj["isLoggedIn"]);
-console.log(myObj["full name"]);
+// console.log(myObj["full name"]);
 
 // way of accessing symbol property of an object
-console.log("Accessing symbol property of object using only square brackets '[]'");
-console.log(myObj[mySym]);
+// console.log("Accessing symbol property of object using only square brackets '[]'");
+// console.log(myObj[mySym]);
+
+myObj.email = "abc@google.com" // way to change the value
+// Object.freeze(myObj) // freezes the object 
+myObj.email = "abc@mail.com"
+// console.log(myObj);
+
+myObj.greeting = function() {
+    console.log("Hello JS user.");
+}
+myObj.greetingtwo = function() {
+    console.log(`Hello JS user ${this.name}.`); // string interpolation 
+}
+
+console.log(myObj.greeting());
+console.log(myObj.greetingtwo());
